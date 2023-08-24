@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 3000vh;
+  text-align: center;
+}
+
+#container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 120vh;
+  width: 120vh;
+  margin: 50vw auto;
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 20px;
+}
+#container1 div {
+  width: 40%;
+  height: 40%;
+  scale: 0;
+  background-color: rgb(168, 168, 168);
+  border-radius: 10px;
+}
+#container1 div h4, #container1 div p {
+  margin-top: 20px;
+}
+#container1 div button {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#container2 {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  margin-top: 20vh;
+  padding: 20px 0px 0px 20px;
+}
+#container2 div {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+#container2 .run1 {
+  background-color: yellow;
+}
+#container2 .run2 {
+  background-color: purple;
+}
+#container2 .run3 {
+  background-color: green;
+}
+#container2 button {
+  width: 200px;
+  height: 6vh;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 20vh;
+  cursor: pointer;
+  margin-top: 10vh;
+}
+
+#container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  margin-top: 20vh;
+}
+#container3 .bolas {
+  display: flex;
+  width: 190px;
+  justify-content: space-between;
+}
+#container3 .bola {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#container4 {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container4 .button {
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+#container4 .diminuir {
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  width: 60px;
+}
+#container4 .palavra {
+  font-size: 20px;
+  margin-left: -12vh;
+}
+#container4 .aparecer {
+  position: absolute;
+  margin-left: 5px;
+  display: block;
+}
+#container4 .carge {
+  display: none;
+}
+#container4 #completo {
+  position: absolute;
+  display: none;
+  background-color: greenyellow;
+  width: 65px;
+  height: 65px;
+  border-radius: 20vh;
+}
+#container4 #completo img {
+  padding-top: 13px;
+}/*# sourceMappingURL=main.css.map */

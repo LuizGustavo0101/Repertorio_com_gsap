@@ -1,0 +1,169 @@
+@mixin display_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin centralizar_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container_config{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-top: 20vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 3000vh;
+    text-align: center;
+}
+
+// Config dos CARDS
+
+#container1{
+    @include display_flex();
+    height: 120vh;
+    width: 120vh;
+    margin: 50vw auto;
+    box-shadow:inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 20px;
+
+    div{
+        width: 40%;
+        height: 40%;
+        scale: (0);
+        background-color: rgb(168, 168, 168);
+        border-radius: 10px;
+
+        
+        h4, p{
+            margin-top: 20px;
+        }
+
+        button{
+            margin-top: 20px;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+}
+
+#container2{
+    @include container_config();
+    padding: 20px 0px 0px 20px;
+
+    div{
+        width: 10vh;
+        height: 10vh;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .run1{background-color: yellow;}
+    .run2{background-color: purple;}
+    .run3{background-color: green;}
+
+    button{
+        width: 200px;
+        height: 6vh;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 20vh;
+        cursor: pointer;
+        margin-top: 10vh;
+    }
+}
+
+#container3{
+    @include centralizar_item();
+    @include container_config();
+
+    .bolas{
+        display: flex;
+        width: 190px;
+        justify-content: space-between;
+    }
+
+    .bola{
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: black;
+    }
+}
+
+#container4{
+    @include container_config();
+    @include centralizar_item();
+
+    .button{
+        width: 180px;
+        height: 60px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 20vh;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+
+        
+    }
+    
+    .diminuir{
+        transition: 0.5s;
+        transition-delay: .5s;
+        width: 60px;
+            
+    }
+
+    .palavra{
+        font-size: 20px;
+        margin-left: -12vh;
+    }
+
+    .aparecer{
+        position: absolute;
+        margin-left: 5px;
+        display: block;
+    }
+
+    .carge{
+        display: none;
+    }
+
+    #completo{
+        position: absolute;
+        display: none;
+        background-color:greenyellow ;
+        width:65px;
+        height: 65px;
+        border-radius: 20vh;
+        
+        img{
+            padding-top: 13px;
+        }
+    } 
+}

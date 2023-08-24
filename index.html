@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Biblioteca do GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+        
+        <!-- Arquivo .js do site -->
+        <script src="./JS/mainScript.js"></script>
+
+        <!-- Arquivo .css do site -->
+        <link rel="stylesheet" href="./CSS/main.css">
+    </head>
+
+    <body>
+        <h1>Role para baixo</h1>
+
+        <article id="container1">
+            <div class="card1">
+                <h4>Card1</h4>
+
+                <p>Esse é um card</p>
+                <button>Aperte aq</button>
+            </div>
+
+            <div class="card2">
+                <h4>Card 2</h4>
+
+                <p>Esse é um card</p>
+                <button>Aperte aq</button>
+            </div>
+
+            <div class="card3">
+                <h4>Card 3</h4>
+
+                <p>Esse é um card</p>
+                <button>Aperte aq</button>
+            </div>
+
+            <div class="card4">
+                <h4>Card 4</h4>
+
+                <p>Esse é um card</p>
+                <button>Aperte aq</button>
+            </div>
+        </article>
+
+        <article id="container2">
+            <div class="run1 box"></div>
+            <div class="run2 box"></div>
+            <div class="run3 box"></div>
+
+            <button onclick="correr()">Começar</button>
+        </article>
+
+        <article id="container3">
+            <div class="bolas">
+                <div class="bola1 bola"></div>
+                <div class="bola2 bola"></div>
+                <div class="bola3 bola"></div>
+                <div class="bola4 bola"></div>
+                <div class="bola5 bola"></div>
+            </div>
+        </article>
+
+        <article id="container4">
+            <button class="button" onclick="donwload()">
+                <img class="img" src="./imagens/downloading.png" alt="icon-donwload" width="15%" object-fit="cover">
+                <span class="palavra">Baixar</span>
+
+                <span class="carge aparecer">0%</span>
+
+                <div id="completo"><img src="./imagens/check.png" alt="" width="60%"></div>
+            </button>
+        </article>
+    
+        <script src="./JS/GSAP.js"></script>
+    </body>
+</html>
